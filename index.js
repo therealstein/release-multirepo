@@ -1,3 +1,5 @@
+const core = require('@actions/core');
+const github = require('@actions/github');
 async function run() {
   // This should be a token with access to your repository scoped in as a secret.
   // The YML workflow will need to set myToken with the GitHub Secret Token
