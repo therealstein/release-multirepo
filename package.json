@@ -1,0 +1,23 @@
+{
+  "name": "releasemultirepo",
+  "version": "1.0.0",
+  "description": "> A GitHub App built with [Probot](https://github.com/probot/probot) that Automatic create release from other repos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/therealstein/release-multirepo.git"
+  },
+  "author": "Steffen Stein",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/therealstein/release-multirepo/issues"
+  },
+  "homepage": "https://github.com/therealstein/release-multirepo#readme",
+  "dependencies": {
+    "@actions/core": "^1.9.0",
+    "@actions/github": "^5.0.3"
+  }
+}
