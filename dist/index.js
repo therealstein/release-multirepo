@@ -9128,7 +9128,7 @@ async function run() {
   }
 
   const octokit = github.getOctokit(myToken);
-  console.log(myToken);
+  console.log(octokit);
   const { data: pullRequest } = await octokit.rest.pulls.get({
     owner: 'therealstein',
     repo: 'release-multirepo',
