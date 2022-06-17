@@ -40,13 +40,8 @@ async function getCommits(octokit, owner, repository) {
 async function run() {
   require('dotenv').config();
   myToken = process.env.GITHUB_TOKEN;
-  const octokit = new Octokit({ auth: myToken });
-
   // login with personal access token
-  const {
-    data: { login },
-  } = await octokit.rest.users.getAuthenticated();
-  console.log('Hello, %s', login);
+  const octokit = new Octokit({ auth: myToken });
 
   const smallCommits = await getCommits(
     octokit,
